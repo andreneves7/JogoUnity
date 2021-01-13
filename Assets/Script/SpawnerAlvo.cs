@@ -4,60 +4,54 @@ using UnityEngine;
 
 public class SpawnerAlvo : MonoBehaviour
 {
-    //public GameObject depoletar;
-    //Collider play;
-
-   
-    //IEnumerator AlvoAparecer()
-    //{
-       
-    //    yield return null;
-
-    //}
-
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    //StartCoroutine(AlvoAparecer());
-    //    var temp = Instantiate(depoletar);
-
-    //    temp.transform.position = new Vector3(-4.41f, 0.01f, -13.25f);
+    [SerializeField]
+    private GameObject prefab;
 
 
-    //    temp.transform.Rotate(0f, 90.0f, 0f);
-       
+    [SerializeField]
+    private Transform[] transforms; //game objects vazios
+
+    public bool Sequential = false;
+    public float timeBetweenTargets = 0.1f;
+    public int currentTarget = 0;
 
 
-    //    play.gameObject.SetActive(false);
-
-    //}
-
-
-
-
-    // Start is called before the first frame update
-    void Start()
+    IEnumerator SpawnSequential(int id)
     {
-       //play = GetComponent<Collider>();
-       // play.isTrigger = true;
 
-       // Debug.Log("Trigger On : " + play.isTrigger);
-        //x.Add(new Vector3(-3.13f, 0.06f, -6.87f));
-       
+        var temp = Instantiate(prefab);
+        temp.transform.position = transforms[id].position;
+        temp.transform.rotation = transforms[id].rotation;
+        yield return new WaitForSeconds(timeBetweenTargets);
+        currentTarget++;
+        if (id < transforms.Length - 2)
+            StartCoroutine("SpawnSequential", currentTarget);
        
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter(Collider other)
     {
-        
+        while(currentTarget >= 0)
+        {
+
+      
+        if (!Sequential)
+        {
+            foreach (var tf in transforms)
+            {
+                var temp = Instantiate(prefab);
+                temp.transform.position = tf.position;
+                temp.transform.rotation = tf.rotation;
+                    currentTarget--;
+            }
+
+        }
+
+        else
+        {
+            StartCoroutine("SpawnSequential", currentTarget);
+
+        }
+        }
     }
-
-    public void Destruir()
-    {
-        Destroy(gameObject);
-    }
-    
-
-   
-
 }

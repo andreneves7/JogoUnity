@@ -86,14 +86,14 @@ public class ApontarAlvo : MonoBehaviour
     void Shoot(Vector3 dir)
     {
 
-        GameObject bulletGo = (GameObject)Instantiate(bulletPrefab, firePos.position, firePos.rotation);
+        //GameObject bulletGo = (GameObject)Instantiate(bulletPrefab, firePos.position, firePos.rotation);
 
-        Bullet bullet = bulletGo.GetComponent<Bullet>();
+        //Bullet bullet = bulletGo.GetComponent<Bullet>();
 
-        if(bullet != null) 
-        {
-            //bullet.Seek(target);
-        }
+        //if(bullet != null) 
+        //{
+        //    //bullet.Seek(target);
+        //}
 
 
        

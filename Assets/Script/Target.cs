@@ -7,7 +7,7 @@ public class Target : MonoBehaviour
     public void TakeDamage(float amout)
     {
         healf -= amout;
-        if (healf <= 0f)
+        if (healf == 0f)
         {
             Die();
         }
