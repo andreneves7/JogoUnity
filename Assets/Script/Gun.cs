@@ -5,7 +5,7 @@ public class Gun : MonoBehaviour
     public float damage = 10f;
     public float range = 100f;
     public float fireRate = 15f;
-
+    private bool m_shoot;
 
     public Camera fpsCam;
     public ParticleSystem muzzelFlash;
@@ -17,14 +17,28 @@ public class Gun : MonoBehaviour
 
     public float nextTimeToFire = 0f;
     
+    public void shooting()
+    {
+        if (!m_shoot)
+        {
+            m_shoot = true;
+        }
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(1) && Time.time >= nextTimeToFire)
+        if (m_shoot == true)
         {
-            nextTimeToFire = Time.time + 1f / fireRate;
-            Shoot();
+            m_shoot = Input.GetButton("Fire1");
+            
+
+            if (Time.time >= nextTimeToFire)
+            {
+                nextTimeToFire = Time.time + 1f / fireRate;
+
+                Shoot();
+            }
         }
     }
 
@@ -34,7 +48,7 @@ public class Gun : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
-            Debug.Log(hit.transform.tag);
+            Debug.Log(hit.transform.tag);   
 
             Target target = hit.transform.GetComponent<Target>();
 

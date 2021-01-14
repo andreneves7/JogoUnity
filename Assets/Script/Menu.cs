@@ -5,30 +5,39 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    public KeyCode p = KeyCode.M;
+    //public GameObject menu;
 
     public void StartGame()
     {
+        SceneManager.LoadScene("Niveis");
+    }
+    public void GameLevel1()
+    {
         SceneManager.LoadScene("Game");
     }
-
-    public void PauseGame()
+    public void GameLevel2()
     {
-        //if (Input.GetKeyDown(RunKey))
-        //{
-
-           SceneManager.LoadScene("Pausa");
-       // }
+        SceneManager.LoadScene("Level2");
     }
-    public void ReturnGame()
+
+    //public void Pausa()
+    //{
+
+    //    menu.SetActive(true);
+    //    Time.timeScale = 0f;
+    //    Debug.Log("ola");
+
+    //}
+    public void QuitGame()
     {
         SceneManager.LoadScene("Menu"); 
     }
 
-    public void PlayGame()
-    {
-        SceneManager.LoadScene("Game");
-    }
+    //    public void ReturnGame()
+    //    {
+    //    menu.SetActive(false);
+    //    Time.timeScale = 1f;
+    //}
 
     // Start is called before the first frame update
     void Start()
@@ -39,10 +48,8 @@ public class Menu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(p))
-        {
-
-            SceneManager.LoadScene("Pausa");
-        }
+        //if (Input.GetKeyDown(KeyCode.Escape)){
+        //    Pausa();
+        //} 
     }
 }
