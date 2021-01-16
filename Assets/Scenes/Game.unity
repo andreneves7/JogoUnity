@@ -19233,6 +19233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText: {fileID: 1568002299}
+  nextSceneLoad: 0
 --- !u!114 &1568002299
 MonoBehaviour:
   m_ObjectHideFlags: 0

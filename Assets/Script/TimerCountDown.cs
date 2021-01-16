@@ -28,6 +28,7 @@ public class TimerCountDown : MonoBehaviour
         i = UpdateInfoJogo.fim;
         Debug.Log(i);
 
+
         if ( b == true)
         {
 
@@ -38,8 +39,11 @@ public class TimerCountDown : MonoBehaviour
             }
             else if ( secondsLeft == 0)
             {
-                SceneManager.LoadScene("Game");
-
+                SpawnerAlvo.inicio = false;
+                int t = SceneManager.GetActiveScene().buildIndex;
+                SceneManager.LoadScene(t);
+                SpawnerAlvo.numeroDeAlvosNoNivel = 0;
+                
             }
            
 

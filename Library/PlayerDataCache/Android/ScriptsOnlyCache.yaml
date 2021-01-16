@@ -4,11 +4,15 @@ ScriptsOnlyBuild:
     - UnityStandardAssets.Characters.FirstPerson.FirstPersonController
     Assembly-CSharp.dll:
     - CFX_AutoDestructShuriken
+    - ControloCenas
     - Gun
     - Menu
     - SpawnerAlvo
     - Target
+    - TimerCountDown
+    - UpdateInfoJogo
     - WayPoint
+    - inicio
     SimpleInput.Runtime.dll:
     - SimpleInputNamespace.Joystick
     Unity.ProBuilder.dll:
@@ -27,7 +31,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -40,6 +43,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.RawImage
+    - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
     Assets/Scenes/Game.unity:
@@ -78,36 +82,147 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11360}
+      Script: {instanceID: 11358}
     - Class: 114
       Script: {instanceID: 11362}
     - Class: 114
-      Script: {instanceID: 11366}
+      Script: {instanceID: 11364}
     - Class: 114
-      Script: {instanceID: 11392}
+      Script: {instanceID: 11368}
     - Class: 114
-      Script: {instanceID: 11540}
+      Script: {instanceID: 11396}
     - Class: 114
-      Script: {instanceID: 11916}
+      Script: {instanceID: 11444}
     - Class: 114
-      Script: {instanceID: 12130}
+      Script: {instanceID: 11548}
     - Class: 114
-      Script: {instanceID: 12168}
+      Script: {instanceID: 11744}
     - Class: 114
-      Script: {instanceID: 12666}
+      Script: {instanceID: 11936}
     - Class: 114
-      Script: {instanceID: 13572}
+      Script: {instanceID: 12156}
     - Class: 114
-      Script: {instanceID: 13738}
+      Script: {instanceID: 12194}
     - Class: 114
-      Script: {instanceID: 14032}
+      Script: {instanceID: 12704}
     - Class: 114
-      Script: {instanceID: 14130}
+      Script: {instanceID: 12710}
     - Class: 114
-      Script: {instanceID: 16112}
+      Script: {instanceID: 13236}
+    - Class: 114
+      Script: {instanceID: 13546}
+    - Class: 114
+      Script: {instanceID: 13642}
+    - Class: 114
+      Script: {instanceID: 13816}
+    - Class: 114
+      Script: {instanceID: 14094}
+    - Class: 114
+      Script: {instanceID: 14118}
+    - Class: 114
+      Script: {instanceID: 14216}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 143
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Level2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11358}
+    - Class: 114
+      Script: {instanceID: 11362}
+    - Class: 114
+      Script: {instanceID: 11364}
+    - Class: 114
+      Script: {instanceID: 11368}
+    - Class: 114
+      Script: {instanceID: 11396}
+    - Class: 114
+      Script: {instanceID: 11444}
+    - Class: 114
+      Script: {instanceID: 11548}
+    - Class: 114
+      Script: {instanceID: 11744}
+    - Class: 114
+      Script: {instanceID: 11936}
+    - Class: 114
+      Script: {instanceID: 12194}
+    - Class: 114
+      Script: {instanceID: 12704}
+    - Class: 114
+      Script: {instanceID: 12710}
+    - Class: 114
+      Script: {instanceID: 13236}
+    - Class: 114
+      Script: {instanceID: 13546}
+    - Class: 114
+      Script: {instanceID: 13642}
+    - Class: 114
+      Script: {instanceID: 13816}
+    - Class: 114
+      Script: {instanceID: 14094}
+    - Class: 114
+      Script: {instanceID: 14118}
+    - Class: 114
+      Script: {instanceID: 14216}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 124
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 143
       Script: {instanceID: 0}
@@ -147,35 +262,90 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11360}
+      Script: {instanceID: 11358}
     - Class: 114
-      Script: {instanceID: 11362}
+      Script: {instanceID: 11364}
     - Class: 114
-      Script: {instanceID: 11366}
+      Script: {instanceID: 11368}
     - Class: 114
-      Script: {instanceID: 11392}
+      Script: {instanceID: 11396}
     - Class: 114
-      Script: {instanceID: 12304}
+      Script: {instanceID: 12336}
     - Class: 114
-      Script: {instanceID: 12884}
+      Script: {instanceID: 12932}
     - Class: 114
-      Script: {instanceID: 12986}
+      Script: {instanceID: 13036}
     - Class: 114
-      Script: {instanceID: 13182}
+      Script: {instanceID: 13236}
     - Class: 114
-      Script: {instanceID: 13204}
+      Script: {instanceID: 13258}
     - Class: 114
-      Script: {instanceID: 13482}
+      Script: {instanceID: 13546}
     - Class: 114
-      Script: {instanceID: 13572}
+      Script: {instanceID: 13642}
     - Class: 114
-      Script: {instanceID: 13790}
+      Script: {instanceID: 13870}
     - Class: 114
-      Script: {instanceID: 13830}
+      Script: {instanceID: 13910}
     - Class: 114
-      Script: {instanceID: 13992}
+      Script: {instanceID: 14074}
     - Class: 114
-      Script: {instanceID: 14130}
+      Script: {instanceID: 14216}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Niveis.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11358}
+    - Class: 114
+      Script: {instanceID: 11364}
+    - Class: 114
+      Script: {instanceID: 11368}
+    - Class: 114
+      Script: {instanceID: 11396}
+    - Class: 114
+      Script: {instanceID: 13236}
+    - Class: 114
+      Script: {instanceID: 13392}
+    - Class: 114
+      Script: {instanceID: 13546}
+    - Class: 114
+      Script: {instanceID: 13642}
+    - Class: 114
+      Script: {instanceID: 13870}
+    - Class: 114
+      Script: {instanceID: 14216}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -195,6 +365,12 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
+      Hash: 89f9a1b4c64db9559e39f4a2e3bfaadd
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
+  - hash:
+      serializedVersion: 2
       Hash: a63fc1a3b035e5a0b5839cd7f7b3086e
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -205,12 +381,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Text
-  - hash:
-      serializedVersion: 2
-      Hash: 89f9a1b4c64db9559e39f4a2e3bfaadd
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
   - hash:
       serializedVersion: 2
       Hash: 5f1752ed2092162f016c19510c28a8b9
@@ -273,6 +443,12 @@ ScriptsOnlyBuild:
     className: ExtinguishableParticleSystem
   - hash:
       serializedVersion: 2
+      Hash: 3de140ce50b924569d2fadee2b2b58ae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: inicio
+  - hash:
+      serializedVersion: 2
       Hash: 174c92277bcb8caf420df51a56bcc05a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -315,6 +491,12 @@ ScriptsOnlyBuild:
     className: FirstPersonController
   - hash:
       serializedVersion: 2
+      Hash: c89a1384954d290f5a73fc9263adcfdc
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: AxisInputKeyboard
+  - hash:
+      serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -343,6 +525,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 5dbf5f0589849f3aa47ed114304567af
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: MouseButtonInputKeyboard
   - hash:
       serializedVersion: 2
       Hash: 78d229a32405f4104025ae9511906999
@@ -417,6 +605,12 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
+      Hash: 70e8c82a3f1b0f0ce86d7a30d5ce6add
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TimerCountDown
+  - hash:
+      serializedVersion: 2
       Hash: 234d407605354852c48e57df17c9a1c6
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -445,6 +639,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: SimpleInputMultiDragListener
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -495,6 +695,12 @@ ScriptsOnlyBuild:
     className: ProBuilderMesh
   - hash:
       serializedVersion: 2
+      Hash: ed8a4df450e3fe1ccf2c05d20a8ba1b9
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: AxisInputRotateGesture
+  - hash:
+      serializedVersion: 2
       Hash: 7d37d09af363b70d55d9408e5fb34050
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -505,6 +711,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: dd8bd395dde7ba733b8eee4d1e1d272b
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: ButtonInputUI
   - hash:
       serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
@@ -535,6 +747,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CFX_AutoStopLoopedEffect
+  - hash:
+      serializedVersion: 2
+      Hash: bffcadb9797d8be363f802c42841d9a7
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: NonDrawingGraphic
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -597,6 +815,12 @@ ScriptsOnlyBuild:
     className: Benchmark03
   - hash:
       serializedVersion: 2
+      Hash: 53ae9f80f9a4f8a64e6418c1008dc1fd
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: MouseButtonInputSwipeGesture
+  - hash:
+      serializedVersion: 2
       Hash: e6f0efd0e20669d577e9d21526b3d3f9
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -627,10 +851,22 @@ ScriptsOnlyBuild:
     className: AeroplaneAudio
   - hash:
       serializedVersion: 2
+      Hash: 5ebeeb552550ad4adabbf0d294783dea
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: Dpad
+  - hash:
+      serializedVersion: 2
       Hash: dd7520b7d4e690e8c593273e7b9fbe80
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMP_TextEventCheck
+  - hash:
+      serializedVersion: 2
+      Hash: e4138598a30e2d8011d80915f62f3081
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: AxisInputUI
   - hash:
       serializedVersion: 2
       Hash: 9452dc0dca800cf5f781114ef25a9a87
@@ -705,6 +941,12 @@ ScriptsOnlyBuild:
     className: ActivateTrigger
   - hash:
       serializedVersion: 2
+      Hash: f8809a8b93dcfdb58ac14ae0dfad21e4
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: ButtonInputKeyboard
+  - hash:
+      serializedVersion: 2
       Hash: 4bd1cc3c85989d2213a9a8fd9d09e63f
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.CrossPlatformInput
@@ -735,6 +977,12 @@ ScriptsOnlyBuild:
     className: CameraFollow
   - hash:
       serializedVersion: 2
+      Hash: 07340dc3493dccaa83b645db5e5d5513
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: MouseButtonInputUI
+  - hash:
+      serializedVersion: 2
       Hash: f03168bb2f3505e6cc0ba61aff5d31ab
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Cameras
@@ -757,6 +1005,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.CrossPlatformInput
     className: ButtonHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 83bbd78a6d951d22961915fc4e120b0e
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: AxisInputMoveGesture
   - hash:
       serializedVersion: 2
       Hash: 0e0c7e6c34f2d19ba95cf463e39888b1
@@ -795,6 +1049,12 @@ ScriptsOnlyBuild:
     className: AutoMoveAndRotate
   - hash:
       serializedVersion: 2
+      Hash: 4a2dad2a2a403ace8a155c9e0ac378de
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: UnityInputProvider
+  - hash:
+      serializedVersion: 2
       Hash: 3375c3d749f8f4cad889721b431bdc27
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -823,6 +1083,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Water
     className: PlanarReflection
+  - hash:
+      serializedVersion: 2
+      Hash: 5ebeeb552550ad4adabbf0d294783dea
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: AxisInputUIArrows
+  - hash:
+      serializedVersion: 2
+      Hash: 557f899c770dd67dae2d3d29bf75d0d2
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: Joystick
   - hash:
       serializedVersion: 2
       Hash: 5d27c6e85ec89cfab8577e9e26695e88
@@ -877,6 +1149,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Utility
     className: ObjectResetter
+  - hash:
+      serializedVersion: 2
+      Hash: 9b1b3dbec969dc2f5c4232ac831d6850
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: AxisInputSwipeGesture
   - hash:
       serializedVersion: 2
       Hash: 9df954eca51e9f2b95915ae2918e4258
@@ -987,6 +1265,12 @@ ScriptsOnlyBuild:
     className: SpecularLighting
   - hash:
       serializedVersion: 2
+      Hash: 3fd88a06891cc3d0886cedfd0311ce38
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: KeyInputSwipeGesture
+  - hash:
+      serializedVersion: 2
       Hash: 9a40de0f5a84ec02044ccfb05875df71
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Utility
@@ -997,6 +1281,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Cameras
     className: TargetFieldOfView
+  - hash:
+      serializedVersion: 2
+      Hash: 3a707e4f3ade082c59aa667959282c9c
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: AxisInputMouse
   - hash:
       serializedVersion: 2
       Hash: 11319334e5365797f8056694f9b5dae4
@@ -1095,6 +1385,12 @@ ScriptsOnlyBuild:
     className: ShaderPropAnimator
   - hash:
       serializedVersion: 2
+      Hash: ba14dbf16bb3d62fab2e3d4c484d41cd
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: SteeringWheel
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -1131,6 +1427,12 @@ ScriptsOnlyBuild:
     className: SimpleScript
   - hash:
       serializedVersion: 2
+      Hash: 54bfe1c81dc376b05c38a2e0a5ff5506
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ControloCenas
+  - hash:
+      serializedVersion: 2
       Hash: c933b2cffdb9d1429a103e9d63c523ef
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Utility
@@ -1159,6 +1461,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Vehicles.Car
     className: Mudguard
+  - hash:
+      serializedVersion: 2
+      Hash: 41a3041db1ef9730156c70c76ec61049
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: 
+    className: ExamplePlayerController
   - hash:
       serializedVersion: 2
       Hash: bd3f0ca738703903e759f77536ed74fd
@@ -1203,6 +1511,12 @@ ScriptsOnlyBuild:
     className: CarAudio
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: 
+    className: SimpleInput
+  - hash:
+      serializedVersion: 2
       Hash: 718ef0ded913ba15da8a97ccf24793ce
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Vehicles.Aeroplane
@@ -1225,6 +1539,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AudioTrack
+  - hash:
+      serializedVersion: 2
+      Hash: cae006dd5cb6a56b42197311973f8c6b
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: KeyInputUI
   - hash:
       serializedVersion: 2
       Hash: ae83e830e7a90c0aff918c4c2e520825
@@ -1269,6 +1589,12 @@ ScriptsOnlyBuild:
     className: TextMeshSpawner
   - hash:
       serializedVersion: 2
+      Hash: 84221737756c8fcadd040a525248193e
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: AxisInputPinchGesture
+  - hash:
+      serializedVersion: 2
       Hash: 74fdef42e5d1b91d250d09f9fc6f54da
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets._2D
@@ -1279,6 +1605,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: VertexShakeB
+  - hash:
+      serializedVersion: 2
+      Hash: b1fc55aad9b58d5d2f266422b7ef405d
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: Touchpad
   - hash:
       serializedVersion: 2
       Hash: 219ec6059796d8951d2adcd8505d0dc2
@@ -1311,7 +1643,7 @@ ScriptsOnlyBuild:
     className: WFX_Demo_Wall
   - hash:
       serializedVersion: 2
-      Hash: 056c7c4e9759e1615051d4696dfc903b
+      Hash: d7381b0016dc88c0e262c3a48da37eb9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SpawnerAlvo
@@ -1327,6 +1659,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMP_UiFrameRateCounter
+  - hash:
+      serializedVersion: 2
+      Hash: 02d2287ff4e17d22567c9888314af90e
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: KeyInputKeyboard
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1347,7 +1685,7 @@ ScriptsOnlyBuild:
     className: GerstnerDisplace
   - hash:
       serializedVersion: 2
-      Hash: 082cd3e0ac70cbda2fe5bb01705ccc94
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Menu
@@ -1383,6 +1721,12 @@ ScriptsOnlyBuild:
     className: TMPro_InstructionOverlay
   - hash:
       serializedVersion: 2
+      Hash: 65935e16a2460fcf993a982110668ee4
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: ButtonInputSwipeGesture
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -1413,10 +1757,22 @@ ScriptsOnlyBuild:
     className: FPSCounter
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: SimpleInput.Runtime.dll
+    namespaceName: SimpleInputNamespace
+    className: SimpleInputDragListener
+  - hash:
+      serializedVersion: 2
       Hash: 0784d4fd5b93bd75440d01eb2fac4233
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: VertexShakeA
+  - hash:
+      serializedVersion: 2
+      Hash: 09a13ea532dd6e00c375f093cbb0c952
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UpdateInfoJogo
   - hash:
       serializedVersion: 2
       Hash: 8b1fe5dfdcf943fb3b72506b9f19335f
@@ -1431,7 +1787,7 @@ ScriptsOnlyBuild:
     className: PlayModeRunnerCallback
   - hash:
       serializedVersion: 2
-      Hash: 17d389a084bcb94e09b117c3f1425ae2
+      Hash: 752386a7096fb1a0d817895c7b2767d2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Target
@@ -1525,170 +1881,10 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Utility
     className: AutoMobileShaderSwitch
-  - hash:
-      serializedVersion: 2
-      Hash: c89a1384954d290f5a73fc9263adcfdc
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: AxisInputKeyboard
-  - hash:
-      serializedVersion: 2
-      Hash: 5dbf5f0589849f3aa47ed114304567af
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: MouseButtonInputKeyboard
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: SimpleInputMultiDragListener
-  - hash:
-      serializedVersion: 2
-      Hash: ed8a4df450e3fe1ccf2c05d20a8ba1b9
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: AxisInputRotateGesture
-  - hash:
-      serializedVersion: 2
-      Hash: dd8bd395dde7ba733b8eee4d1e1d272b
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: ButtonInputUI
-  - hash:
-      serializedVersion: 2
-      Hash: bffcadb9797d8be363f802c42841d9a7
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: NonDrawingGraphic
-  - hash:
-      serializedVersion: 2
-      Hash: 53ae9f80f9a4f8a64e6418c1008dc1fd
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: MouseButtonInputSwipeGesture
-  - hash:
-      serializedVersion: 2
-      Hash: 5ebeeb552550ad4adabbf0d294783dea
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: Dpad
-  - hash:
-      serializedVersion: 2
-      Hash: e4138598a30e2d8011d80915f62f3081
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: AxisInputUI
-  - hash:
-      serializedVersion: 2
-      Hash: f8809a8b93dcfdb58ac14ae0dfad21e4
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: ButtonInputKeyboard
-  - hash:
-      serializedVersion: 2
-      Hash: 07340dc3493dccaa83b645db5e5d5513
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: MouseButtonInputUI
-  - hash:
-      serializedVersion: 2
-      Hash: 83bbd78a6d951d22961915fc4e120b0e
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: AxisInputMoveGesture
-  - hash:
-      serializedVersion: 2
-      Hash: 4a2dad2a2a403ace8a155c9e0ac378de
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: UnityInputProvider
-  - hash:
-      serializedVersion: 2
-      Hash: 5ebeeb552550ad4adabbf0d294783dea
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: AxisInputUIArrows
-  - hash:
-      serializedVersion: 2
-      Hash: 557f899c770dd67dae2d3d29bf75d0d2
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: Joystick
-  - hash:
-      serializedVersion: 2
-      Hash: 9b1b3dbec969dc2f5c4232ac831d6850
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: AxisInputSwipeGesture
-  - hash:
-      serializedVersion: 2
-      Hash: 3fd88a06891cc3d0886cedfd0311ce38
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: KeyInputSwipeGesture
-  - hash:
-      serializedVersion: 2
-      Hash: 3a707e4f3ade082c59aa667959282c9c
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: AxisInputMouse
-  - hash:
-      serializedVersion: 2
-      Hash: ba14dbf16bb3d62fab2e3d4c484d41cd
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: SteeringWheel
-  - hash:
-      serializedVersion: 2
-      Hash: 41a3041db1ef9730156c70c76ec61049
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: 
-    className: ExamplePlayerController
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: 
-    className: SimpleInput
-  - hash:
-      serializedVersion: 2
-      Hash: cae006dd5cb6a56b42197311973f8c6b
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: KeyInputUI
-  - hash:
-      serializedVersion: 2
-      Hash: 84221737756c8fcadd040a525248193e
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: AxisInputPinchGesture
-  - hash:
-      serializedVersion: 2
-      Hash: b1fc55aad9b58d5d2f266422b7ef405d
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: Touchpad
-  - hash:
-      serializedVersion: 2
-      Hash: 02d2287ff4e17d22567c9888314af90e
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: KeyInputKeyboard
-  - hash:
-      serializedVersion: 2
-      Hash: 65935e16a2460fcf993a982110668ee4
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: ButtonInputSwipeGesture
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: SimpleInput.Runtime.dll
-    namespaceName: SimpleInputNamespace
-    className: SimpleInputDragListener
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity
+  - Assets/Scenes/Niveis.unity
   - Assets/Scenes/Game.unity
+  - Assets/Scenes/Level2.unity
   playerPath: C:/Users/jatsm/Desktop/jogo.apk
