@@ -127,6 +127,6 @@ public class ApontarAlvo : MonoBehaviour
             }
             //Debug.Log(hit.collider.gameObject.name);
         }
-
+//ola
     }
 }
