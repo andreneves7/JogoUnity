@@ -10,6 +10,7 @@ public class UpdateInfoJogo : MonoBehaviour
     public TextMeshProUGUI myText;
     public int nextSceneLoad;
     public static bool fim = false;
+    public static bool fimNiveis = false;
    
     // Start is called before the first frame update
     void Start()
@@ -32,6 +33,10 @@ public class UpdateInfoJogo : MonoBehaviour
             if (nextSceneLoad > PlayerPrefs.GetInt("levelAt") )
             {
                 PlayerPrefs.SetInt("levelAt", nextSceneLoad);
+                if (nextSceneLoad == 3)
+                {
+                    fimNiveis = true;
+                }
             }
 
 

@@ -630,11 +630,11 @@
     <Reference Include="Boo.Lang">
       <HintPath>D:/Unity/2019.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/jatsm/Desktop/uni/3 ano/1 semestre/Jogos/JogoUnity-master/JogoUnity-master/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Users/jatsm/Desktop/uni/3 ano/1 semestre/Jogos/JogoUnity-master/JogoUnity-master/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Users/jatsm/Desktop/uni/3 ano/1 semestre/Jogos/JogoUnity-master/JogoUnity-master/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>C:/Users/jatsm/Desktop/uni/3 ano/1 semestre/Jogos/JogoUnity-master/JogoUnity-master/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>

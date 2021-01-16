@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - ControloCenas
     - Gun
     - Menu
+    - ResetLevels
     - SpawnerAlvo
     - Target
     - TimerCountDown
@@ -26,11 +27,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -90,37 +86,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11368}
     - Class: 114
-      Script: {instanceID: 11396}
+      Script: {instanceID: 11398}
     - Class: 114
-      Script: {instanceID: 11444}
+      Script: {instanceID: 11446}
     - Class: 114
-      Script: {instanceID: 11548}
+      Script: {instanceID: 11550}
     - Class: 114
-      Script: {instanceID: 11744}
+      Script: {instanceID: 11746}
     - Class: 114
-      Script: {instanceID: 11936}
+      Script: {instanceID: 11938}
     - Class: 114
-      Script: {instanceID: 12156}
+      Script: {instanceID: 12158}
     - Class: 114
-      Script: {instanceID: 12194}
+      Script: {instanceID: 12196}
     - Class: 114
-      Script: {instanceID: 12704}
+      Script: {instanceID: 12706}
     - Class: 114
-      Script: {instanceID: 12710}
+      Script: {instanceID: 12712}
     - Class: 114
-      Script: {instanceID: 13236}
+      Script: {instanceID: 13238}
     - Class: 114
-      Script: {instanceID: 13546}
+      Script: {instanceID: 13548}
     - Class: 114
-      Script: {instanceID: 13642}
+      Script: {instanceID: 13644}
     - Class: 114
-      Script: {instanceID: 13816}
+      Script: {instanceID: 13818}
     - Class: 114
-      Script: {instanceID: 14094}
+      Script: {instanceID: 14096}
     - Class: 114
-      Script: {instanceID: 14118}
+      Script: {instanceID: 14120}
     - Class: 114
-      Script: {instanceID: 14216}
+      Script: {instanceID: 14218}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -189,35 +185,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11368}
     - Class: 114
-      Script: {instanceID: 11396}
+      Script: {instanceID: 11398}
     - Class: 114
-      Script: {instanceID: 11444}
+      Script: {instanceID: 11446}
     - Class: 114
-      Script: {instanceID: 11548}
+      Script: {instanceID: 11550}
     - Class: 114
-      Script: {instanceID: 11744}
+      Script: {instanceID: 11746}
     - Class: 114
-      Script: {instanceID: 11936}
+      Script: {instanceID: 11938}
     - Class: 114
-      Script: {instanceID: 12194}
+      Script: {instanceID: 12196}
     - Class: 114
-      Script: {instanceID: 12704}
+      Script: {instanceID: 12706}
     - Class: 114
-      Script: {instanceID: 12710}
+      Script: {instanceID: 12712}
     - Class: 114
-      Script: {instanceID: 13236}
+      Script: {instanceID: 13238}
     - Class: 114
-      Script: {instanceID: 13546}
+      Script: {instanceID: 13548}
     - Class: 114
-      Script: {instanceID: 13642}
+      Script: {instanceID: 13644}
     - Class: 114
-      Script: {instanceID: 13816}
+      Script: {instanceID: 13818}
     - Class: 114
-      Script: {instanceID: 14094}
+      Script: {instanceID: 14096}
     - Class: 114
-      Script: {instanceID: 14118}
+      Script: {instanceID: 14120}
     - Class: 114
-      Script: {instanceID: 14216}
+      Script: {instanceID: 14218}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -268,29 +264,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11368}
     - Class: 114
-      Script: {instanceID: 11396}
+      Script: {instanceID: 11398}
     - Class: 114
-      Script: {instanceID: 12336}
+      Script: {instanceID: 12338}
     - Class: 114
-      Script: {instanceID: 12932}
+      Script: {instanceID: 12934}
     - Class: 114
-      Script: {instanceID: 13036}
+      Script: {instanceID: 13038}
     - Class: 114
-      Script: {instanceID: 13236}
+      Script: {instanceID: 13238}
     - Class: 114
-      Script: {instanceID: 13258}
+      Script: {instanceID: 13260}
     - Class: 114
-      Script: {instanceID: 13546}
+      Script: {instanceID: 13548}
     - Class: 114
-      Script: {instanceID: 13642}
+      Script: {instanceID: 13644}
     - Class: 114
-      Script: {instanceID: 13870}
+      Script: {instanceID: 13872}
     - Class: 114
-      Script: {instanceID: 13910}
+      Script: {instanceID: 13912}
     - Class: 114
-      Script: {instanceID: 14074}
+      Script: {instanceID: 14076}
     - Class: 114
-      Script: {instanceID: 14216}
+      Script: {instanceID: 14218}
+    - Class: 114
+      Script: {instanceID: 90066}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -333,19 +331,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11368}
     - Class: 114
-      Script: {instanceID: 11396}
+      Script: {instanceID: 11398}
     - Class: 114
-      Script: {instanceID: 13236}
+      Script: {instanceID: 13238}
     - Class: 114
-      Script: {instanceID: 13392}
+      Script: {instanceID: 13394}
     - Class: 114
-      Script: {instanceID: 13546}
+      Script: {instanceID: 13548}
     - Class: 114
-      Script: {instanceID: 13642}
+      Script: {instanceID: 13644}
     - Class: 114
-      Script: {instanceID: 13870}
+      Script: {instanceID: 13872}
     - Class: 114
-      Script: {instanceID: 14216}
+      Script: {instanceID: 14218}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1881,10 +1879,16 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Utility
     className: AutoMobileShaderSwitch
+  - hash:
+      serializedVersion: 2
+      Hash: 00d78a792eda3460b88d0039d8206f14
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ResetLevels
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Niveis.unity
   - Assets/Scenes/Game.unity
   - Assets/Scenes/Level2.unity
-  playerPath: C:/Users/jatsm/Desktop/jogo.apk
+  playerPath: C:/Users/jatsm/Desktop/HeadShoot.apk
