@@ -24,7 +24,7 @@ public class UpdateInfoJogo : MonoBehaviour
     void Update()
     {
        
-       myText.text = $"{SpawnerAlvo.numeroDeAlvosNoNivel}";
+       myText.text = $"{inicio.total}";
         if(inicio.total == 0)
         {
             fim = true;

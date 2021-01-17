@@ -18,15 +18,15 @@ public class TimerCountDown : MonoBehaviour
     {
         b = SpawnerAlvo.inicio;
         i = UpdateInfoJogo.fim;
-        textDisplay.GetComponent<Text>().text = "00:" + secondsLeft;
-        Debug.Log(b);
+        textDisplay.GetComponent<Text>().text = "Tempo:" + secondsLeft + "seg";
+        //Debug.Log(b);
     }
 
     void Update()
     {
         b = SpawnerAlvo.inicio;
         i = UpdateInfoJogo.fim;
-        Debug.Log(i);
+        //Debug.Log(i);
 
 
         if ( b == true)
@@ -61,11 +61,11 @@ public class TimerCountDown : MonoBehaviour
         secondsLeft--;
         if (secondsLeft < 10)
         {
-            textDisplay.GetComponent<Text>().text = "00:0" + secondsLeft;
+            textDisplay.GetComponent<Text>().text = "Tempo:0" + secondsLeft + "seg";
         }
         else
         {
-            textDisplay.GetComponent<Text>().text = "00:" + secondsLeft;
+            textDisplay.GetComponent<Text>().text = "Tempo:" + secondsLeft + "seg";
         }
         takingAway = false;
     }

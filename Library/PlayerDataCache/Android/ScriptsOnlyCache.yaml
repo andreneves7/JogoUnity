@@ -27,6 +27,14 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -67,11 +75,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -86,19 +100,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11368}
     - Class: 114
-      Script: {instanceID: 11398}
+      Script: {instanceID: 11396}
     - Class: 114
-      Script: {instanceID: 11446}
+      Script: {instanceID: 11444}
     - Class: 114
-      Script: {instanceID: 11550}
+      Script: {instanceID: 11548}
     - Class: 114
-      Script: {instanceID: 11746}
+      Script: {instanceID: 11744}
     - Class: 114
-      Script: {instanceID: 11938}
+      Script: {instanceID: 11936}
     - Class: 114
-      Script: {instanceID: 12158}
+      Script: {instanceID: 12156}
     - Class: 114
-      Script: {instanceID: 12196}
+      Script: {instanceID: 12194}
     - Class: 114
       Script: {instanceID: 12706}
     - Class: 114
@@ -166,11 +180,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -185,17 +205,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11368}
     - Class: 114
-      Script: {instanceID: 11398}
+      Script: {instanceID: 11396}
     - Class: 114
-      Script: {instanceID: 11446}
+      Script: {instanceID: 11444}
     - Class: 114
-      Script: {instanceID: 11550}
+      Script: {instanceID: 11548}
     - Class: 114
-      Script: {instanceID: 11746}
+      Script: {instanceID: 11744}
     - Class: 114
-      Script: {instanceID: 11938}
+      Script: {instanceID: 11936}
     - Class: 114
-      Script: {instanceID: 12196}
+      Script: {instanceID: 12194}
     - Class: 114
       Script: {instanceID: 12706}
     - Class: 114
@@ -264,9 +284,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11368}
     - Class: 114
-      Script: {instanceID: 11398}
+      Script: {instanceID: 11396}
     - Class: 114
-      Script: {instanceID: 12338}
+      Script: {instanceID: 12336}
+    - Class: 114
+      Script: {instanceID: 12400}
     - Class: 114
       Script: {instanceID: 12934}
     - Class: 114
@@ -287,8 +309,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14076}
     - Class: 114
       Script: {instanceID: 14218}
-    - Class: 114
-      Script: {instanceID: 90066}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -331,7 +351,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11368}
     - Class: 114
-      Script: {instanceID: 11398}
+      Script: {instanceID: 11396}
     - Class: 114
       Script: {instanceID: 13238}
     - Class: 114
@@ -801,7 +821,7 @@ ScriptsOnlyBuild:
     className: CarUserControl
   - hash:
       serializedVersion: 2
-      Hash: 77547f949a834b506cdfc5a08f03440d
+      Hash: a1f856b82f84ff48ded1c52d8083d662
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Gun
@@ -913,6 +933,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.CrossPlatformInput
     className: Joystick
+  - hash:
+      serializedVersion: 2
+      Hash: 00d78a792eda3460b88d0039d8206f14
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ResetLevels
   - hash:
       serializedVersion: 2
       Hash: 4f631fd718256a8c69483c396671a274
@@ -1879,12 +1905,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Utility
     className: AutoMobileShaderSwitch
-  - hash:
-      serializedVersion: 2
-      Hash: 00d78a792eda3460b88d0039d8206f14
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ResetLevels
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity

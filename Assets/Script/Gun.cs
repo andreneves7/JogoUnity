@@ -1,10 +1,17 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class Gun : MonoBehaviour
 {
     public float damage = 10f;
     public float range = 100f;
     public float fireRate = 15f;
+    public int maxAmmo = 20;
+    private int currentAmmo;
+    public float reloadTime = 1f;
+    private bool isReloading = false;
+    public Animator animator;
+
     private bool m_shoot;
 
     public Camera fpsCam;
@@ -16,7 +23,13 @@ public class Gun : MonoBehaviour
 
 
     public float nextTimeToFire = 0f;
-    
+
+
+    void Start()
+    {
+        currentAmmo = maxAmmo;
+    }
+
     public void shooting()
     {
         if (!m_shoot)
@@ -28,6 +41,16 @@ public class Gun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isReloading)
+        {
+            return;
+        }
+        if (currentAmmo <= 0)
+        {
+            StartCoroutine(Reload());
+            return;
+        }
+
         if (m_shoot == true)
         {
             m_shoot = Input.GetButton("Fire1");
@@ -42,13 +65,30 @@ public class Gun : MonoBehaviour
         }
     }
 
+
+    IEnumerator Reload()
+    {
+        isReloading = true;
+        Debug.Log("Reloading...");
+
+        animator.SetBool("Reloading", true);
+
+        yield return new WaitForSeconds(reloadTime);
+
+        animator.SetBool("Reloading", false);
+
+        currentAmmo = maxAmmo;
+        isReloading = false;
+    }
+
     void Shoot()
     {
+        currentAmmo--;
         muzzelFlash.Play();
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
-            Debug.Log(hit.transform.tag);   
+            //Debug.Log(hit.transform.tag);   
 
             Target target = hit.transform.GetComponent<Target>();
 
@@ -57,14 +97,14 @@ public class Gun : MonoBehaviour
             {
                 GameObject impactGO3 = Instantiate(impactEfectFailParede, hit.point, Quaternion.LookRotation(hit.normal));
                 Destroy(impactGO3, 2f);
-                Debug.Log("Cheguei");
+                //Debug.Log("Cheguei");
 
             }
 
             else if (hit.collider.CompareTag("Limites"))
             {
              
-                Debug.Log("Cheguei limite");
+                //Debug.Log("Cheguei limite");
 
             }
             else
